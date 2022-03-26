@@ -77,6 +77,7 @@
   :sainnhe/sonokai {}
   :sainnhe/gruvbox-material {}
   :tomasiser/vim-code-dark {}
+  :projekt0n/github-nvim-theme {}
 
   ;; Language and framework support
   :neovimhaskell/haskell-vim {}

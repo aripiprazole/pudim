@@ -2,6 +2,8 @@
 
 (require :plugins)
 
+(require :themes.github)
+
 (require :config.icons)
 (require :config.lsp)
 (require :config.tab)
