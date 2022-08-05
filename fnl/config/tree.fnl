@@ -53,11 +53,11 @@
       :warning ""
       :error ""
     }
-  }
+  } 
   :view {
     :side :left
     :width 30
     :hide_root_folder true
-  }
+  } 
   :update_focused_file {:enable true}
 })

@@ -23,3 +23,4 @@
 (require :config.theming)
 
 (nvim.fn.glaive#Install)
+
