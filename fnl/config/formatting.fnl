@@ -10,9 +10,17 @@
     autocmd FileType python AutoFormatBuffer yapf
     autocmd FileType rust AutoFormatBuffer rustfmt
     autocmd FileType vue AutoFormatBuffer prettier
-  augroup END") ;; TODO: use eslint
+  augroup END")
+
+;; TODO: use eslint
 
 ;; Setup key bindings
 
-(vim.api.nvim_set_keymap "n" "<leader>ft" "<cmd>:FormatCode<CR>" {:noremap true}) ;; Format file
-(vim.api.nvim_set_keymap "n" "<leader>ftl" "<cmd>:FormatLines<CR>" {:noremap true}) ;; Format selected code
+(vim.api.nvim_set_keymap :n :<leader>ft "<cmd>:FormatCode<CR>" {:noremap true})
+
+;; Format file
+(vim.api.nvim_set_keymap :n :<leader>ftl "<cmd>:FormatLines<CR>"
+                         {:noremap true})
+
+;; Format selected code
+

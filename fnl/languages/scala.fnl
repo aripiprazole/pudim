@@ -4,3 +4,4 @@ augroup lsp
   au FileType java,scala,sbt lua require('metals').initialize_or_attach({})
 augroup end
 ")
+
