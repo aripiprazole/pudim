@@ -97,7 +97,7 @@
   ;; LSP stuff
   :neovim/nvim-lspconfig {}
   :hrsh7th/nvim-compe {}
-  :onsails/lspkind-nvim {}
+  :onsails/lspkind.nvim {}
   :hrsh7th/vim-vsnip {}
   :hrsh7th/vim-vsnip-integ {}
   :j-hui/fidget.nvim {}
