@@ -3,42 +3,7 @@
 
 (local g nvim.g)
 
-(set g.nvim_tree_icons {
-  :default ""
-  :symlink ""
-  :git {
-    :unstaged "✗"
-    :staged "✓"
-    :unmerged ""
-    :renamed "➜"
-    :untracked "★"
-    :deleted ""
-    :ignored "◌"
-  }
-  :folder {
-    :arrow_open ""
-    :arrow_closed ""
-    :default ""
-    :open ""
-    :empty ""
-    :empty_open ""
-    :symlink ""
-    :symlink_open ""
-  }
-  :lsp {
-    :hint ""
-    :info ""
-    :warning ""
-    :error ""
-  }
-})
-
-(set g.nvim_tree_side "left")
-(set g.nvim_tree_width 40)
-(set g.nvim_tree_indent_markers 1)
 (set g.nvim_tree_width_allow_resize 1)
-(set g.nvim_tree_special_files ["README.md" "Makefile"])
-(set g.nvim_tree_highlight_opened_files 1)
 
 ;; Setup key bindings
 
@@ -48,6 +13,38 @@
 
 ;; Setup nvim-tree
 (nvim-tree.setup {
+  :renderer {
+    :indent_markers {
+      :enable true
+    }
+    :highlight_opened_files "all"
+    :special_files ["README.md" "Makefile"]
+    :icons {
+      :glyphs {
+        :default ""
+        :symlink ""
+        :git {
+          :unstaged "✗"
+          :staged "✓"
+          :unmerged ""
+          :renamed "➜"
+          :untracked "★"
+          :deleted ""
+          :ignored "◌"
+        }
+        :folder {
+          :arrow_open ""
+          :arrow_closed ""
+          :default ""
+          :open ""
+          :empty ""
+          :empty_open ""
+          :symlink ""
+          :symlink_open ""
+        }
+      }
+    }
+  }
   :diagnostics {
     :enable false
     :icons {
