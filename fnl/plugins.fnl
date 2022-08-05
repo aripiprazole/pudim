@@ -24,6 +24,7 @@
   :google/vim-glaive {}
 
   ;; UI, icons, colors, ricing stuf
+  :rcarriga/nvim-notify {}
   :glepnir/dashboard-nvim {}
   :kyazdani42/nvim-web-devicons {}
   :simrat39/symbols-outline.nvim {}
