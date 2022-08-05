@@ -7,6 +7,7 @@
 (local symbols-outline (require :symbols-outline))
 (local lspkind (require :lspkind))
 (local gitsigns (require :gitsigns))
+(local notify (require :notify))
 
 (local g nvim.g)
 (local o nvim.o)
@@ -92,6 +93,9 @@
 
 ;; Disable builtin statusline
 (vim.cmd "set noshowmode")
+
+;; Setup nvim-notify
+(set vim.notify notify)
 
 ;; Setup LspKind symbols
 (set vim.o.completeopt "menuone,noselect")
