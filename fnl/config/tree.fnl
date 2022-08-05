@@ -55,8 +55,8 @@
     }
   }
   :view {
-    :side :right
-    :width 25
+    :side :left
+    :width 30
     :hide_root_folder true
   }
   :update_focused_file {:enable true}
